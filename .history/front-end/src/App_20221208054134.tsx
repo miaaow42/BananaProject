@@ -27,7 +27,7 @@ function App() {
       {/* Client- Side Routing*/}
       <Routes>
         <Route path="/" element={<SurveyListAll/>} />
-        <Route path='/date' element={<Date/>} />
+        <Route path='/' element={<Date/>} />
       </Routes>
       <Footer></Footer>
       </BrowserRouter>

@@ -12,10 +12,9 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 // Comment Components
 import Header from './components/header';
 import Footer from './components/footer';
-import Date from './content/date';
 
 // Content Components
-// import Home from './content/home';
+import Home from './content/home';
 import SurveyListAll from './content/survey-list-all';
 
 function App() {
@@ -27,7 +26,6 @@ function App() {
       {/* Client- Side Routing*/}
       <Routes>
         <Route path="/" element={<SurveyListAll/>} />
-        <Route path='/date' element={<Date/>} />
       </Routes>
       <Footer></Footer>
       </BrowserRouter>
