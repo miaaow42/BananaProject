@@ -12,12 +12,6 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 // Comment Components
 import Header from './components/header';
 import Footer from './components/footer';
-
-
-
-// Content Components
-// import Home from './content/home';
-import SurveyListAll from './content/survey-list-all';
 import Date from './content/date';
 import Export from './content/export';
 import Question from './content/question';
@@ -25,10 +19,11 @@ import SignIn from './content/sign-in';
 import Register from './content/register';
 import SurveyList from './content/survey-list';
 import TakeSurvey from './content/take-survey';
-import UpdateQMC from './content/update-question-mc';
-import UpdateQSA from './content/update-question-sa';
-import UpdateQTF from './content/update-question-tf';
-import UpdateSuevey from './content/update-survey';
+
+
+// Content Components
+// import Home from './content/home';
+import SurveyListAll from './content/survey-list-all';
 
 function App() {
   return (
@@ -40,16 +35,6 @@ function App() {
       <Routes>
         <Route path="/" element={<SurveyListAll/>} />
         <Route path='/date' element={<Date/>} />
-        <Route path='/export' element={<Export/>} />
-        <Route path='/question' element={<Question/>} />
-        <Route path='/sign-in' element={<SignIn/>} />
-        <Route path='/register' element={<Register/>} />
-        <Route path='/survey-list' element={<SurveyList/>} />
-        <Route path='/take-survey' element={<TakeSurvey/>} />
-        <Route path='/update-question-mc' element={<UpdateQMC/>} />
-        <Route path='/update-question-sa' element={<UpdateQSA/>} />
-        <Route path='/update-question-tf' element={<UpdateQTF/>} />
-        <Route path='/update-survey' element={<UpdateSuevey/>} />
       </Routes>
       <Footer></Footer>
       </BrowserRouter>
