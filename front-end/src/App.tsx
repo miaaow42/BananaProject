@@ -21,7 +21,7 @@ import SurveyListAll from './content/survey-list-all';
 import Date from './content/date';
 import Export from './content/export';
 import Question from './content/question';
-import SignIn from './content/sign-in';
+import Login from './authentication/login';
 import Register from './content/register';
 import SurveyList from './content/survey-list';
 import TakeSurvey from './content/take-survey';
@@ -42,7 +42,7 @@ function App() {
         <Route path='/date' element={<Date/>} />
         <Route path='/export' element={<Export/>} />
         <Route path='/question' element={<Question/>} />
-        <Route path='/sign-in' element={<SignIn/>} />
+        <Route path='/login' element={<Login/>} />
         <Route path='/register' element={<Register/>} />
         <Route path='/survey-list' element={<SurveyList/>} />
         <Route path='/take-survey' element={<TakeSurvey/>} />
