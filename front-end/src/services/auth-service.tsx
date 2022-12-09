@@ -19,9 +19,9 @@ class AuthService
         localStorage.removeItem("user");
     }
 
-    public register(username:string, password:string, FirstName:string, LastName:string, EmailAddress:string)
+    public register(username:string, password:string, FirstName:string, LastName:string,)
     {
-        return http.post('register',{username,password,FirstName,LastName,EmailAddress});
+        return http.post('register',{username,password,FirstName,LastName});
     }
 
     public getCurrentUser()

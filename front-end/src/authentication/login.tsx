@@ -32,13 +32,12 @@ function Login()
             password: password,
             FirstName: "",
             LastName: "",
-            EmailAddress: ""
         }
         // user the auth service to perform login
         AuthService.login(UserData.username, UserData.password)
         .then(()=>{
             // navigate to the survey list page
-            navigate("/survey-list") // just like res.redirect...
+            navigate("/") // just like res.redirect...
         }, error=>{
             // flashing
             window.location.reload();
@@ -57,7 +56,7 @@ function Login()
 
                             <h2 className="display-4 mb-4"><i className="fas fa-user-lock"></i> Sign In</h2>
 
-                            <form onSubmit={handleLogin}  id="loginForm" method="POST">
+                            <form onSubmit={handleLogin}  id="loginForm">
 
                                 <div className="form-outline mb-4">
                                     <div className="input-group mb-1">

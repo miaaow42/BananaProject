@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 
@@ -22,7 +22,8 @@ import Date from './content/date';
 import Export from './content/export';
 import Question from './content/question';
 import Login from './authentication/login';
-import Register from './content/register';
+import Register from './authentication/register';
+import Logout from './authentication/logout';
 import SurveyList from './content/survey-list';
 import TakeSurvey from './content/take-survey';
 import UpdateQMC from './content/update-question-mc';
@@ -30,7 +31,12 @@ import UpdateQSA from './content/update-question-sa';
 import UpdateQTF from './content/update-question-tf';
 import UpdateSuevey from './content/update-survey';
 
+
 function App() {
+
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  
   return (
     <div className="App">
       <BrowserRouter>
@@ -43,6 +49,7 @@ function App() {
         <Route path='/export' element={<Export/>} />
         <Route path='/question' element={<Question/>} />
         <Route path='/login' element={<Login/>} />
+        <Route path='/logout' element={<Logout/>} />
         <Route path='/register' element={<Register/>} />
         <Route path='/survey-list' element={<SurveyList/>} />
         <Route path='/take-survey' element={<TakeSurvey/>} />
